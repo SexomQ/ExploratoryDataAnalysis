@@ -1,0 +1,33 @@
+================================================================================
+TRAIN-TEST SPLIT SUMMARY
+================================================================================
+
+Split Date: 2021-12-31
+Training Period: 2000 Q2 - 2021 Q4
+Test Period: 2022 Q1 - 2025 Q3
+
+IMPORTANT: All predictors are LAGGED for realistic forecasting
+  - No contemporaneous values used
+  - Only historical data (t-1, t-4) available at prediction time
+
+
+GDP_GROWTH:
+  Target: gdp_growth
+  Predictors (8): gdp_growth_lag1, gdp_growth_lag4, inflation_lag1, unemployment_lag1, exports_lag1, trade_balance_lag1, consumption_lag1, import_ratio_lag1
+  Training observations: 88
+  Test observations: 15
+  Files: train_gdp_growth.csv, test_gdp_growth.csv
+
+INFLATION:
+  Target: inflation
+  Predictors (8): inflation_lag1, inflation_lag4, inflation_ma4, gdp_growth_lag1, unemployment_lag1, imports_lag1, import_ratio_lag1, trade_balance_lag1
+  Training observations: 88
+  Test observations: 15
+  Files: train_inflation.csv, test_inflation.csv
+
+UNEMPLOYMENT:
+  Target: unemployment
+  Predictors (9): unemployment_lag1, unemployment_lag4, gdp_growth_lag1, gdp_growth_lag4, inflation_lag1, emigration_lag1, net_migration_lag1, exports_lag1, consumption_lag1
+  Training observations: 88
+  Test observations: 15
+  Files: train_unemployment.csv, test_unemployment.csv
