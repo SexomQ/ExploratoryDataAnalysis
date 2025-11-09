@@ -32,42 +32,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Project Structure
-
-```
-project-root/
-│
-├── EuropeanDevelopmentIndicatorsAcquisition.ipynb
-├── requirements.txt
-│
-└── data_indicators/
-    ├── ei_cphi_m_page_linear_2_0.csv
-    ├── namq_10_gdp_page_linear_2_0.csv
-    ├── nasa_10_nf_tr_page_linear_2_0.csv
-    ├── une_rt_m_page_linear_2_0.csv
-    ├── jvs_q_nace2_page_linear_2_0.csv
-    ├── demo_pjangroup_page_linear_2_0.csv
-    ├── migr_emi2_page_linear_2_0.csv
-    ├── migr_imm8_page_linear_2_0.csv
-    ├── demo_mlexpec_page_linear_2_0.csv
-    ├── demo_gind_page_linear_2_0.csv
-    ├── prc_hpi_q_page_linear_2_0.csv
-    ├── namq_10_exi_page_export_linear_2_0.csv
-    ├── namq_10_exi_page_import_linear_2_0.csv
-    └── tipsbp40_page_linear_2_0.csv
-```
-
-## Data Requirements
-
-### Create the Data Directory
-
-```bash
-mkdir data_indicators
-```
+## Data Requirements``
 
 ### Required Data Files
 
-Place the following 14 CSV files in the `data_indicators/` folder:
+Make sure to have the following 14 CSV files in the `data_indicators/` folder:
 
 - `ei_cphi_m_page_linear_2_0.csv`
 - `namq_10_gdp_page_linear_2_0.csv`
@@ -106,7 +75,7 @@ jupyter notebook
 
 ### Step 3: Run the Notebook
 
-1. Click on `EuropeanDevelopmentIndicatorsAcquisition.ipynb`
+1. Click on `.ipynb` file
 2. Click `Kernel` → `Restart & Run All`
 
 ## Troubleshooting
@@ -138,4 +107,9 @@ Error: No kernel found
 **Solution**: Install IPython kernel:
 ```bash
 python -m ipykernel install --user --name=.venv
+```
+
+**Any Other Issue:**
+```
+ChatGPT it
 ```
